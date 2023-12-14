@@ -262,7 +262,16 @@ h2{
     padding-top: 6vw;
     border-radius: 50%;
     height: 400px;
+    animation: fadeIn 2s ease-in-out;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 .img19{
     height: 40px;
     cursor: pointer;
@@ -327,3 +336,35 @@ h2{
     transform: translateY(-5px);
 }
 
+/* Original styles */
+
+@media only screen and (max-width: 600px) {
+    .graphic, .web, .ui, .seo, .busi, .app, .mail, .number, .edu1, .skill, .service1{
+        line-height: normal;
+    }
+    .yourname{
+        width: 80vw;
+    }
+    .text{
+        width: 80vw;
+    }
+    .icon9 img{
+        height: 30px;
+    }
+    .img11{
+        height: 20px;
+        display: none;
+    }
+    .mail, .number{
+        font-size: x-small;
+    }
+    .hi{
+        font-size: larger;
+    }
+    .info{
+        font-size: small;
+    }
+    .img8{
+        
+    }
+}
